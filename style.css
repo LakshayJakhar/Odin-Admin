@@ -1,18 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "roboto";
 }
 
 
 body{
     display: grid;
-    grid-template-columns: 25vw 1fr;
+    grid-template-columns: 20vw 1fr;
     grid-template-rows: 100vh ;
 }
 
-.nav-container{
-    background-color: aquamarine;
-}
+
 
 .container-main{
     background-color: aqua;
@@ -35,10 +34,13 @@ body{
 .projects{
     background-color: pink;
     display: grid;
-    grid-template: repeat(3,1fr)/repeat(2,1fr);
-    gap: 10px;
-    margin: 10px;
+    grid-template: 40px repeat(3,1fr)/ repeat(2,1fr);
 }
+.projects >h1{
+    grid-column: 1/3;
+}
+
+
 .project-1{
     background-color: red;
 }
@@ -68,7 +70,7 @@ body{
 .second-part{
     background-color: brown;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 40px 1fr 40px 1fr;
 }
 
 .announc{
@@ -77,6 +79,49 @@ body{
 
 .trending{
     background-color: beige;
+}
+
+.nav-container{
+    background-color: #1892d3;
+    padding: 30px;
+}
+
+
+.head-dash{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    color: #f2faff;
+}
+
+.head-dash >img{
+    height: 50px;
+}
+
+.dash-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+}
+
+.dash-links li{
+    display: flex;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    gap: 2rem;
+    color: #f2faff;
+    font-weight: 500;
+}
+
+.dash-links li:nth-child(6){
+    margin-bottom: 6rem;
+}
+
+
+img{
+    height: 30px;
+    filter: invert();
 }
 
 
