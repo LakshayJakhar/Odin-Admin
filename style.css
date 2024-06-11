@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 25vw 1fr;
+    grid-template-rows: 100vh ;
+}
+
+.nav-container{
+    background-color: aquamarine;
+}
+
+.container-main{
+    background-color: aqua;
+    display: grid; 
+    grid-template-rows: 20vh 1fr;   
+}
+
+.search{
+    background-color: black;
+}
+
+
+.first-part{
+    display: grid;
+    grid-template: 1fr /50vw 1fr;
+    /* grid-template-columns: 1fr 50px; */
+}
+
+
+.projects{
+    background-color: pink;
+    display: grid;
+    grid-template: repeat(3,1fr)/repeat(2,1fr);
+    gap: 10px;
+    margin: 10px;
+}
+.project-1{
+    background-color: red;
+}
+
+.project-2{
+    background-color: purple;
+
+}
+.project-3{
+    background-color: lightblue;
+
+}
+.project-4{
+    background-color: maroon;
+
+}
+.project-5{
+    background-color: gray;
+
+}
+.project-6{
+    background-color: green;
+
+}
+
+
+.second-part{
+    background-color: brown;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announc{
+    background-color: blue;
+}
+
+.trending{
+    background-color: beige;
+}
+
+
+
+
